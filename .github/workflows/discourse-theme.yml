@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   ci:
-    uses: discourse/.github/.github/workflows/discourse-theme.yml@v1
+    uses: discourse/.github/.github/workflows/discourse-theme.yml@bee9ee78c8e6fd574a8496f415e08c6eb412d3df # reviewed upstream v1
